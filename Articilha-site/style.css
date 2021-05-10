@@ -1,0 +1,149 @@
+/* Variables : */
+:root {
+  -color_hover: rgb(121, 161, 105);
+  --color: rgb(55, 70, 74);
+  --body_color: rgb(253, 244, 227); /*rgb(202, 200, 200);*/
+}
+
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+
+/** Pour une bonne manipulation :  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  background-color: rgba(255, 255, 255, 0.226);
+}
+/* Logo design */
+#logo {
+  display: flex;
+  place-items: center;
+}
+/* le video du background */
+#newspapers-video {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  min-width: 100vw;
+}
+/** La barre header top de navigation */
+#bar-navigation-complete {
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+}
+#header-main {
+  height: 15em;
+  display: flex;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0),
+    rgba(22, 22, 22, 0.883)
+  );
+}
+/* La barre de navigation */
+#navbar {
+  color: white;
+  font-size: 2vw;
+  width: 100%;
+}
+#navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 1em;
+  width: 100%;
+}
+#navbar li {
+  list-style: none;
+  margin: 2rem 0rem;
+}
+#navbar a {
+  transition: 1s;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+}
+#navbar a:hover {
+  background-color: rgb(47, 85, 255);
+  text-decoration: underline;
+}
+/* ================================ */
+/** La barre de recherche */
+#main {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 2em;
+  place-items: center;
+}
+#main-text {
+  font-size: 3.4vw;
+  width: 50%;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0.1rem 0.1rem 1.2rem rgba(37, 37, 37, 0.883);
+}
+#form-cherche-bar {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 4rem;
+  font-size: 1.7rem;
+}
+#cherche-bar {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  place-items: center;
+  margin-right: 1rem;
+  box-shadow: 0px 2px 20px rgba(37, 37, 37, 0.883);
+}
+#cherche-bar label {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+#cherche-bar i {
+  padding: 1rem;
+  display: flex;
+  color: rgb(151, 151, 151);
+  align-items: center;
+  border-right: 0.1rem solid rgb(151, 151, 151);
+}
+#cherche-bar input[type="text"] {
+  width: 100%;
+  height: 100%;
+  border: 0.1rem solid white;
+  padding: 0 1rem;
+}
+#form-cherche-bar button {
+  width: 10rem;
+  background-color: rgb(47, 85, 255);
+  text-transform: uppercase;
+  text-shadow: 0rem 0.1rem 0.5rem rgba(37, 37, 37, 0.883);
+  color: white;
+  border: none;
+  box-shadow: 0px 2px 20px rgba(37, 37, 37, 0.883);
+}
