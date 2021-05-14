@@ -1,7 +1,7 @@
 /* Variables : */
 :root {
   --light-color: rgb(185, 221, 251);
-  --main-color: rgb(96, 7, 148);
+  --main-color: rgb(95, 7, 146);
   --dark-color: rgb(42, 5, 51); /*rgb(202, 200, 200);*/
 }
 
@@ -171,6 +171,79 @@ body {
   box-shadow: 0px 2px 20px rgba(37, 37, 37, 0.883);
   padding: 1em;
 }
+/********* Login Section *********/
+#login {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--light-color);
+  position: relative;
+  overflow-x: hidden;
+}
+#login main {
+  height: 60vh;
+  min-width: 50vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: white */
+  background-color: var(--dark-color);
+  box-shadow: 0.2rem 0.2rem 2rem black;
+  overflow: hidden;
+}
+.split {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: 100%;
+  width: 100%;
+}
+#avatar {
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.473);
+  display: flex;
+  justify-content: center;
+}
+#avatar img {
+  height: 100%;
+  width: auto;
+}
+#login form {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+}
+#login form > div {
+  flex-direction: row;
+  padding: 0.5rem;
+}
+#login form input {
+  height: 3rem;
+  width: 65%;
+  padding: 0.3rem;
+}
+#login form label {
+  height: 3rem;
+  width: 35%;
+  font-size: clamp(1.5vw, 2rem, 2vh);
+}
+#login form :nth-child(3) {
+  justify-content: center;
+}
+#login form button {
+  background-color: var(--light-color);
+  border: none;
+  width: max-content;
+  height: max-content;
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+  font-size: clamp(1.5rem, 3vw, 2vh);
+  box-shadow: 0.1rem 0.1rem 0.8rem white;
+  cursor: pointer;
+}
+#login form a {
+  color: var(--light-color);
+}
 /** Media Query */
 @media (max-width: 50em) {
   #navbar {
@@ -210,6 +283,17 @@ body {
     font-size: 1.3rem;
   }
 
-  #main-text {
+  /********* Login Section *********/
+  #login form {
+    padding: 1rem;
+  }
+  #login form > div {
+    justify-content: space-between;
+  }
+  #login form input {
+    width: auto;
+  }
+  #login form label {
+    width: 20%;
   }
 }
