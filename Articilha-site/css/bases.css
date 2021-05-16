@@ -1,0 +1,36 @@
+/* Variables : */
+:root {
+  --light-color: rgb(185, 221, 251);
+  --main-color: rgb(95, 7, 146);
+  --dark-color: rgb(42, 5, 51); /*rgb(202, 200, 200);*/
+}
+
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+
+/** Pour une bonne manipulation :  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+/* Partie Icons */
+.middle-icons {
+  font-size: 3rem;
+}

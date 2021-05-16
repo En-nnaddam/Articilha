@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bases.css" />
+    <link rel="stylesheet" href="css/acceuil.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>Articlha</title>
     <script src="https://kit.fontawesome.com/cd51ce947c.js" crossorigin="anonymous"></script>
 </head>

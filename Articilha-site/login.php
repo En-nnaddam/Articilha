@@ -25,13 +25,13 @@
                 <form action="" class="split">
                     <div class="split">
                         <label for="email">
-                            <pre>E-mail : </pre>
+                            <pre><i class="far fa-envelope"></i> E-mail : </pre>
                         </label>
                         <input type="email" id="email" placeholder="exemple@exemple.xyz" />
                     </div>
                     <div class="split">
                         <label for="password">
-                            <pre>Mot de passe : </pre>
+                            <pre><i class="fas fa-key"></i> Mot de passe : </pre>
                         </label>
                         <input type="password" id="password" placeholder="Votre mot de passe" />
                     </div>
