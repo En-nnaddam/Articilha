@@ -2,8 +2,8 @@
 #login {
   height: 100vh;
   width: 100%;
-  background-color: var(--light-color);
-  /* background-image: url(img/back5.jpg); */
+  /* background-color: var(--light-color); */
+  background-image: url(img/back5.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

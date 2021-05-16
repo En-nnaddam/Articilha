@@ -25,7 +25,7 @@
                 <form action="" class="split">
                     <div class="split">
                         <label for="email">
-                            <pre><i class="far fa-envelope"></i> E-mail : </pre>
+                            <pre><i class="fas fa-envelope"></i> E-mail : </pre>
                         </label>
                         <input type="email" id="email" placeholder="exemple@exemple.xyz" />
                     </div>
